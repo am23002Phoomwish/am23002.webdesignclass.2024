@@ -1,0 +1,137 @@
+@charset "UTF-8" ;
+
+.jaini-regular {
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+@media screen {
+  
+}
+  
+#container
+{
+ display: grid;
+ grid-template-rows: auto auto auto auto;
+ grid-template-columns:  auto auto auto;
+}
+
+body
+{
+ background-color: grey;
+ background-size: auto;
+}
+.title
+{
+ border: 5px solid;
+ background-image: url("source/Cat.resize.jpg");
+ background-size:auto;
+ border-top-left-radius: 50px;
+ border-bottom-left-radius: 50px;
+ border-top-right-radius: 50px;
+ border-bottom-right-radius: 50px;
+ text-align: center;
+ line-height: 0.5px;
+ font-size:large;
+ font-weight: bold;
+}
+.title h2
+{
+ color: #2B1B17;
+}
+.title h3
+{
+ color: #2B1B17;
+}
+/*Grid position*/
+.list_of_stuff_nav
+{
+ grid-row-start: 2;
+ grid-row-end: 3;
+ grid-column-start: 1;
+ grid-column-end: 2;
+}
+header
+{
+ grid-row-start: 1;
+ grid-row-end: 2;
+ grid-column-start: 1;
+ grid-column-end: 4;
+}
+.About_me
+{
+ grid-row-start: 2;
+ grid-row-end: 3;
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+.Contact
+{
+  grid-row-start: 3;
+  grid-row-end: 4 ;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.Education
+{
+ grid-row-start: 3;
+ grid-row-end: 4;
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+.WorkAward
+{
+ grid-row-start: 4;
+ grid-row-end: 5;
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+
+
+.list_of_stuff
+{
+ list-style-image: url("source/mypicNose.JPG");
+ margin-left: 15px;
+ font-size: 40px;
+}
+
+.Contact ul
+{
+ list-style-image: url("source/gmail.png") ;
+ margin-left: 10px;
+}
+
+/*for each text*/
+.list_of_stuff_nav
+{
+ 
+}
+.About_me
+{
+ border: 2px solid;
+}
+
+.Education
+{
+ border: 2px solid;
+}
+
+.WorkAward
+{
+ border: 2px solid;
+}
+
+.Contact
+{
+ border: 2px solid;
+}
+/*picture*/
+
+img[src*="source/mypic"]
+{
+ max-width: 10%;
+ border: 7px groove; 
+ border-radius: 30%;
+ margin: 0 45%;
+}
