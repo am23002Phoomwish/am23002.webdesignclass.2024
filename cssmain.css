@@ -11,32 +11,24 @@
 #container
 {
  display: grid;
- grid-template-rows: auto auto auto auto;
- grid-template-columns:  auto auto auto;
+ grid-template-columns: 20em 50px auto;
+ grid-template-rows: 64px auto auto auto auto ;
 }
+
 /*change for the new media*/
-@media only screen and (min-width: 600px)
-{
-  #container
-  {
-   display: grid;
-   grid-template-columns:  auto auto;
-   grid-template-rows: auto;
-  }
-}
-@media only screen and (max-width: 400px)
-{
-  #container
-  {
-   display: grid;
-   grid-template-columns: auto;
-   grid-template-rows: auto;
+@media (max-width: 600px) {
+  #container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
+@media (max-width: 400px) {
+  #container {
+    grid-template-columns: auto;
+  }
+}
 
-
-
+/*line height*/
 body
 {
  background-color: grey;
@@ -64,88 +56,228 @@ body
 {
  color: #2B1B17;
 }
+.Education h4
+{
+ line-height: 0.1px;
+}
+a
+{
+ text-decoration: none;
+ border-left: 2px solid black;
+ border-right: 2px solid black;
+ border-radius: 7px;
+}
+a:link
+{
+ color:#2B1B17 ;
+}
+a:visited{
+  color: white;
+}
+a:focus
+{
+ background-color: rgba(0,0,0,0.3);
+}
+a:hover
+{
+ background-color: rgba(0,0,0,0.3);
+}
+a:active
+{
+ background-color: rgba(0,0,0,0.3);
+}
+
 /*Grid position*/
 .list_of_stuff_nav
-{
- grid-row-start: 2;
- grid-row-end: 3;
- grid-column-start: 1;
- grid-column-end: 2;
-}
-header
 {
  grid-row-start: 1;
  grid-row-end: 2;
  grid-column-start: 1;
  grid-column-end: 4;
 }
-.About_me
+header
 {
  grid-row-start: 2;
  grid-row-end: 3;
- grid-column-start: 2;
+ grid-column-start: 1;
  grid-column-end: 4;
 }
-.Contact
-{
-  grid-row-start: 3;
-  grid-row-end: 4 ;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.Education
+#About_me
 {
  grid-row-start: 3;
  grid-row-end: 4;
- grid-column-start: 2;
+ grid-column-start: 1;
  grid-column-end: 4;
 }
-.WorkAward
+#Contact
+{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2  ;
+}
+#Education
 {
  grid-row-start: 4;
  grid-row-end: 5;
- grid-column-start: 2;
+ grid-column-start: 3;
  grid-column-end: 4;
 }
-
-
-.list_of_stuff
+#WorkAward
 {
- list-style-image: url("source/mypicNose.JPG");
- margin-left: 15px;
- font-size: 40px;
+ grid-row-start: 5;
+ grid-row-end: 6;
+ grid-column-start: 3;
+ grid-column-end: 4;
+}
+#related_stuff
+{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-.Contact ul
+
+.list_of_stuff_nav
+{
+ border-left: 5px solid ;
+ border-right: 5px solid;
+ border-radius: 10px;
+ text-align:center;
+}
+#Contact
+{
+  line-height: 1px;
+  margin-left: 5px;
+}
+#related_stuff p,h4
+{
+ margin-left: 5px;
+}
+#Contact ul
+{
+  font-size: large;
+  line-height: 70px;
+}
+.image
+{
+ display: inline-block;
+ margin: 0 2.5%;
+}
+
+#gmail
 {
  list-style-image: url("source/gmail.png") ;
+}
+#instagram
+{
+ list-style-image: url("source/instagram.png") ;
+}
+#discord
+{
+ list-style-image: url("source/discord.png") ;
+}
+
+/*for each text and border*/
+h4
+{
+  font-size: 40px;
+  line-height: 10px;
+}
+#Thailand
+{
+ font-size: larger;
+ margin-left: 50px;
+ font-weight: bold;
+}
+#blackCat
+{
+ font-size: larger;
+ margin-left: 25px;
+ font-weight: bold;
+}
+#surat
+{
+ font-size: larger;
+ margin-left: 55px;
+ font-weight: bold;
+}
+#bangkok 
+{
+ font-size: larger;
+ margin-left: 130px;
+ font-weight: bold;
+}
+.list_of_stuff_nav a
+{
+ text-align: center;
+ padding: 10px 15px;
+ font-size: 40px;
+}
+#related_stuff p
+{
+  font-size: 22px;
+}
+#About_me
+{
+ border-left: 5px solid;
+ border-right: 5px solid;
+ border-radius: 10px;
+ line-height: 30px;
+}
+#About_me p
+{
+ font-size: 25px;
  margin-left: 10px;
 }
 
-/*for each text*/
-.list_of_stuff_nav
+#Education
+{
+ border-top: 5px solid;
+ border-bottom: 5px solid;
+ border-radius: 10px;
+}
+#Education ul
+{
+  font-size: 30px;
+}
+
+#WorkAward
 {
  
+ border-left: 5px solid ;
+ border-radius: 10px;
 }
-.About_me
+#WorkAward li
 {
- border: 2px solid;
+ font-size: 30px ;
 }
 
-.Education
+#Contact
 {
- border: 2px solid;
+ border-top: 5px solid;
+ border-right: 5px solid;
+ border-radius: 10px;
+}
+#Contact h4
+{
+ text-decoration: underline;
+ text-decoration-style: double;
+}
+#related_stuff
+{
+
+ border-bottom: 5px solid;
+ border-left: 5px solid;
+ border-radius: 10px;
+}
+#related_stuff h4
+{
+ text-decoration: underline;
+ text-decoration-style: double;
 }
 
-.WorkAward
-{
- border: 2px solid;
-}
-
-.Contact
-{
- border: 2px solid;
-}
 /*picture*/
 
 img[src*="source/mypic"]
