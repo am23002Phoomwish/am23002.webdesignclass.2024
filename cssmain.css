@@ -115,7 +115,7 @@ header
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 2  ;
-  overflow: wrap;
+  overflow-wrap: break-word;
 }
 #Education
 {
