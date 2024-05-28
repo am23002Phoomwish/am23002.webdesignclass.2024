@@ -115,6 +115,7 @@ header
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 2  ;
+  overflow: wrap;
 }
 #Education
 {
@@ -149,7 +150,6 @@ header
 #Contact
 {
   line-height: 1px;
-  overflow: wrap;
 }
 #related_stuff p,h4
 {
