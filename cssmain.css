@@ -149,6 +149,7 @@ header
 #Contact
 {
   line-height: 1px;
+  overflow: wrap;
 }
 #related_stuff p,h4
 {
