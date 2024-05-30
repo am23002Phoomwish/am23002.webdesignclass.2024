@@ -44,7 +44,7 @@ body
  border-top-right-radius: 50px;
  border-bottom-right-radius: 50px;
  text-align: center;
- line-height: 0.5px;
+ line-height: 0.6px;
  font-size:large;
  font-weight: bold;
 }
@@ -228,6 +228,7 @@ h4
  border-right: 5px solid;
  border-radius: 10px;
  line-height: 30px;
+ 
 }
 #About_me p
 {
@@ -240,6 +241,7 @@ h4
  border-top: 5px solid;
  border-bottom: 5px solid;
  border-radius: 10px;
+ 
 }
 #Education ul
 {
@@ -262,6 +264,7 @@ h4
  border-top: 5px solid;
  border-right: 5px solid;
  border-radius: 10px;
+ background-color: rgba(255, 255, 255, 0.2);
 }
 #Contact h4
 {
